@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      <VuetifyLogo />
+    </div>
     <p>Hey.. This is {{nama}}'s page</p>
     <v-btn
       elevation="3"

@@ -68,6 +68,8 @@
       temporary
       fixed
     >
+      <Owner nama="Shiro" posisi="Analyst" />
+      <v-divider></v-divider>
       <v-list>
         <v-list-item @click.native="right = !right">
           <v-list-item-action>

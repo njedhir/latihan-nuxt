@@ -11,6 +11,7 @@
           <v-data-table
             :headers="tableHeaders"
             :items="depList"
+            :loading="tableLoading"
           >
             <!-- <template v-slot="">
               <v-icon @click="deleteData(item.id)">mdi-cross</v-icon>
@@ -24,6 +25,7 @@
 <script>
 export default {
   data: () => ({
+    tableLoading: false,
     depList: [{
       acid: "SJV332",
       ssrCode: "2315",
@@ -42,12 +44,15 @@ export default {
   }),
   methods: {
     ambilData() {
+      this.tableLoading = true
       this.$axios.get('/aftn/acid')
         .then(response => {
           this.depList = response.data
+          this.tableLoading = false
         })
         .catch(err => {
           console.error(err.message)
+          this.tableLoading = false
         })
     },
     deleteData(id) {

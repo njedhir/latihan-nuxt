@@ -33,7 +33,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-card class="purple lighten-4" elevation="0">
+        <v-card class="purple lighten-4">
           <v-card-title>Box Bawah 1</v-card-title>
           <v-card-text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae ex ipsa natus ab dolore quam eius omnis vero voluptas perferendis facilis, iusto incidunt officiis temporibus debitis tempore voluptatem tenetur.
